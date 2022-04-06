@@ -28,7 +28,7 @@ body {
 header {
   display: block;
   width: 100%;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background: var(--back-color);
   position: fixed;
   top: 0;
@@ -99,7 +99,7 @@ section {
 
 /* Home section */
 .home {
-  margin-top: 5rem;
+  margin-top: 6rem;
   background: url(../images/home3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,3 +118,31 @@ section {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+    gap: 2rem;
+}
+
+.about-img img{
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.about-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.about-text h2{
+    font-size: 1.7rem;
+}
+
+.about-text p{
+    font-size: 0.93rem;
+    margin: 1rem 0 1rem;
+}
+
+
