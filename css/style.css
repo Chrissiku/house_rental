@@ -94,7 +94,7 @@ section {
   border-radius: 5rem;
 }
 .btn:hover {
-  background: var(--hover-color);
+  background: var(--second-color);
 }
 
 /* Home section */
@@ -143,6 +143,42 @@ section {
 .about-text p{
     font-size: 0.93rem;
     margin: 1rem 0 1rem;
+}
+
+.sale{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 2.4rem;
+
+}
+
+.sale .box{
+    padding: 20px;
+    background: var(--back-color);
+    box-shadow: var(--hover-color);
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.sale .box:hover{
+    background: var(--second-color);
+    color: var(--back-color);
+    transition: 0.3s all linear;
+}
+
+.sale .box .bx{
+    padding: 10px;
+    border-radius: 50%;
+    background: #f6f6f6;
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.sale .box h3{
+    font-size: 1.1rem;
+    margin: 1rem 0 0.4rem;
+}
+.sale .box p{
+    font-size: 00.93rem;
 }
 
 
