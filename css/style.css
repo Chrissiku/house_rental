@@ -16,7 +16,7 @@
   --second-color: #192f6a;
   --text-color: #314863;
   --back-color: #fff;
-  --hover-color:#3492fd;
+  --hover-color: #3492fd;
 }
 img {
   width: 100%;
@@ -28,24 +28,30 @@ body {
 header {
   display: block;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
   background: var(--back-color);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
 }
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 35px;
+
+section {
+  padding: 4.5rem 0 3rem;
 }
 
 .container {
   max-width: 1068px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Naviagtion bar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
 }
 .logo {
   display: flex;
@@ -76,17 +82,39 @@ header {
 #menu {
   display: none;
 }
-#menu-icon{
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
-.btn{
-    padding: 8px 22px;
-    background: var(--primary-color);
+.btn {
+  padding: 8px 22px;
+  background: var(--primary-color);
+  color: var(--back-color);
+  border-radius: 5rem;
+}
+.btn:hover {
+  background: var(--hover-color);
+}
+
+/* Home section */
+.home {
+  margin-top: 5rem;
+  background: url(../images/home3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.home-text{
+    padding-left: 35px;
+}
+.home-text h1{
     color: var(--back-color);
-    border-radius: 5rem;
-}
-.btn:hover{
-    background: var(--hover-color);
+    /* color: rgba(255, 255, 255, 0.788); */
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
