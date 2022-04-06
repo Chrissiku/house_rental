@@ -347,3 +347,63 @@ section {
   color: var(--back-color);
   background: var(--primary-color);
 }
+
+.login {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  align-items: center;
+  min-height: 80vh;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.log-cont {
+  display: grid;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.log-cont h2{
+    font-size: 1.4rem;
+}
+.log-cont p{
+  font-size: 0.9rem;
+}
+.log-cont form{
+    display: flex;
+    flex-direction: column;
+}
+.log-cont form span{
+    font-size: 0.9rem;
+    color: #8a8a8a;
+    margin-bottom: 4px;
+}
+.log-cont form input{
+    border: 1px solid #8a8a8a;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background: var(--back-color);
+}
+
+.log-cont  form .button{
+    outline: none;
+    border: none;
+    background: var(--primary-color);
+    color: var(--back-color);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+.log-cont  form .button:hover{
+    background: var(--second-color);
+}
+
+
+.log-cont form a{
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.log-cont .btn{
+    border-radius: 0;
+    text-align: center;
+}
