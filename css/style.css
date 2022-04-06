@@ -406,3 +406,126 @@ section {
   border-radius: 0;
   text-align: center;
 }
+
+/* Media Queries */
+
+@media (max-width: 1080px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 880px) {
+  section {
+    padding: 4rem 0 3rem;
+  }
+
+  .prop-cont {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    padding: 0 10px;
+  }
+
+  .foot-cont {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+  }
+
+  .login {
+    grid-template-columns: 0.6fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 10px 0;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--second-color);
+    text-align: center;
+    clip-path: circle(0% at 100% 1%);
+    transition: 0.6s;
+  }
+  .navbar a {
+    display: block;
+    margin: 1rem;
+    padding: 20px;
+    color: var(--back-color);
+  }
+  .navbar a:hover {
+    background: var(--primary-color);
+    transition: 0.2s;
+  }
+  #menu:checked ~ .navbar {
+    clip-path: circle(144% at 100% 1%);
+  }
+  .about-text span {
+    font-size: 0.9rem;
+  }
+
+  .about-text h2,
+  .heading h2,
+  .newsletter h2 {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 638px){
+    .about-text{
+        text-align: center;
+    }
+    .about-img{
+        order: 2;
+    }
+    .login{
+        grid-template-columns: 0.8fr 1fr;
+    }
+    .login{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 572px){
+    .login-image{
+        display: none;
+    }
+    .login{
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 442px){
+  .home-text{
+      padding-left: 14px;
+  }
+  .home-text h1{
+      font-size: 1.7rem;
+  }
+
+  .about-text h2, .heading h2, .newsletter h2{
+      font-size: 1.2rem;
+  }
+  .prop-cont{
+      padding: 0;
+  }
+
+  .newsletter #email-box{
+      width: 100px;
+  }
+  .footer{
+      border-radius: 3rem 0 0 0;
+      text-align: center;
+  }
+}
+
